@@ -1,4 +1,4 @@
-##### Journal Web App
+### Journal Web App
 
 Journal is a web app built with Nodejs and MongoDB.
 
