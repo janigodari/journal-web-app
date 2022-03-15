@@ -48,7 +48,7 @@ Demo: https://journal-app-demo.herokuapp.com
 
 #### To connect to [MongoDB Cloud ](https://cloud.mongodb.com)
 
-Change this code from this:
+Change the code from this:
 
 `mongoose.connect("mongodb://localhost:27017/journalDB", {useNewUrlParser: true, useUnifiedTopology: true});`
 
