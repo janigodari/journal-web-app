@@ -6,7 +6,7 @@ Journal is a web app built with Nodejs and MongoDB.
 
 - Login/Register
 
-- Create a jorunal entery
+- Create a journal entery
 
 - Delete a journal entery
 
@@ -50,7 +50,7 @@ Demo: https://journal-app-demo.herokuapp.com
 
 Change this code from this:
 
-`mongoose.connect("mongodb://localhost:27017/jorunalDB", {useNewUrlParser: true, useUnifiedTopology: true});`
+`mongoose.connect("mongodb://localhost:27017/journalDB", {useNewUrlParser: true, useUnifiedTopology: true});`
 
 To this:
 
