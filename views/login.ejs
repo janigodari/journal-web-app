@@ -1,0 +1,38 @@
+<%- include('partials/login-header') %> 
+
+    <div class="container">
+        <div class="img">
+            <img src="images/img-3.svg" alt="">
+        </div>
+        <div class="login-box">
+            <form action="/login" method="POST">
+                <img src="images/avatar.svg" alt="" class="avatar">
+                <h2>Welcome</h2>
+                <h5 id="security-warning">⚠️⚠️ Dont put your real email and password, this is a demo website⚠️</h5>
+                <h3><%= errorMessage %></h1>
+                <div class="input-group">
+                    <div class="icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Email</h5>
+                        <input type="text" class="input" name="username">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="icon">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Password</h5>
+                        <input type="password" class="input" name="password">
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Login" name="btn">
+                <input type="submit" class="btn" value="Register" name="btn">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+<%- include('partials/footer') %> 

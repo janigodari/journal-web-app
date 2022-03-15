@@ -1,0 +1,17 @@
+<%- include('partials/header') %> 
+
+    <h1>Change Password</h1>
+    <h4>Email: <%= email%></h4>
+    <h3><%= message%></h3>
+    <form action="/settings" method="POST">
+        <div class="form-group">
+            <label for="postTitle">Old Password</label><br>
+            <input class="form-control" type="password" name="oldPassword" style="width: 350px;"><br>
+            <label for="postTitle">New Password</label><br>
+            <input class="form-control" type="password" name="newPassword" style="width: 350px;"><br>
+            <button class="btn btn-primary" type="submit" name="button">Change Password</button>
+        </div>
+    </form>
+
+
+<%- include('partials/footer') %> 

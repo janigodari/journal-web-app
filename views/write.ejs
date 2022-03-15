@@ -1,0 +1,15 @@
+<%- include('partials/header') %> 
+
+    <h1>Journal</h1>
+    <form action="/write" method="POST">
+        <div class="form-group">
+            <label for="postTitle">Title</label><br>
+            <input class="form-control" type="text" name="postTitle"><br>
+            <label for="postBody">The Journal</label><br>
+            <textarea class="form-control" name="postBody" id="" cols="120" rows="5"></textarea><br>
+            <button class="btn btn-primary" type="submit" name="button">Save</button>
+        </div>
+    </form>
+
+
+<%- include('partials/footer') %> 

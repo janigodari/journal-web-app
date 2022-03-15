@@ -1,0 +1,12 @@
+<%- include('partials/header'); -%>
+
+    <h1>Journals</h1>
+
+    <% post.forEach(function(journal){ %>
+
+        <h1><%= journal.title %></h1>
+        <p><%= journal.content.substring(0, 100) + "..." %><a href="/post/<%= journal.id%>">Read More</a> </p>
+        
+    <% }) %>
+
+<%- include('partials/footer'); -%>
