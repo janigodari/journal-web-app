@@ -1,12 +1,12 @@
-##### Journal Web App
+### Journal Web App
 
 Journal is a web app built with Nodejs and MongoDB.
 
-##### Features:
+#### Features:
 
 - Login/Register
 
-- Create a jorunal entery
+- Create a journal entery
 
 - Delete a journal entery
 
@@ -16,9 +16,9 @@ Demo: https://journal-app-demo.herokuapp.com
 
 
 
-##### Setup: [ Tested on Ubuntu 21.10]
+#### Setup: [ Tested on Ubuntu 21.10]
 
-###### Requirements:
+##### Requirements:
 
 - Nodejs
 
@@ -46,11 +46,11 @@ Demo: https://journal-app-demo.herokuapp.com
 
 
 
-##### To connect to [MongoDB Cloud ](https://cloud.mongodb.com)
+#### To connect to [MongoDB Cloud ](https://cloud.mongodb.com)
 
-Change this code from this:
+Change the code from this:
 
-`mongoose.connect("mongodb://localhost:27017/jorunalDB", {useNewUrlParser: true, useUnifiedTopology: true});`
+`mongoose.connect("mongodb://localhost:27017/journalDB", {useNewUrlParser: true, useUnifiedTopology: true});`
 
 To this:
 
@@ -58,9 +58,9 @@ To this:
 
 Username , password & address are give when setting up database on mongodb cloud, and can also be accessed after database is created
 
-##### Deploying to [Heroku](https://www.heroku.com/)
+#### Deploying to [Heroku](https://www.heroku.com/)
 
-###### Requirements:
+##### Requirements:
 
 - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
