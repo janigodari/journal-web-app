@@ -31,6 +31,7 @@ mongoose.set("useCreateIndex", true);
 const journalsSchema = new mongoose.Schema({
     title: String,
     content: String,
+    date: String,
 })
 
 const Journal = mongoose.model("Journal", journalsSchema);
@@ -75,10 +76,12 @@ app.post('/write', (req, res)=>{
     const postTitle = req.body.postTitle
     const postBody = req.body.postBody
     const userId = req.user.id
+    const dateTime = new Date();
 
     const journal = new Journal({
         title: postTitle,
-        content: postBody
+        content: postBody,
+        date: dateTime
     })
 
     User.findById(userId, (err, result)=>{
