@@ -5,6 +5,7 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 const bodyParser = require('body-parser');
+const crypto = require('crypto')
 
 const app = express();
 app.set("view engine", "ejs");
@@ -16,8 +17,10 @@ var path = require('path');
 const { Router } = require('express');
 app.use(express.static(path.join(__dirname, 'public')));
 
+const secret = crypto.randomBytes(20).toString('hex');
+
 app.use(session({
-    secret: "secret",
+    secret: secret,
     resave: false,
     saveUninitialized: false
 }))
