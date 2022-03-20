@@ -136,7 +136,6 @@ app.post('/settings' , (req , res)=>{
                 res.render('settings', {message: "User password changed" , email: req.user.username})
             }
         })
-        console.log("save")
     })
 
 })
@@ -176,7 +175,6 @@ app.get('/delete/:postId', (req, res)=>{
             if(!err){
                 User.updateOne({_id: userID}, {"$pull": {"journals": {_id: requestedPostId} }}, {safe: true, multi: true}, function(err){
                     if(!err){
-                        console.log("deleted")
                         res.redirect("/")
                     }
                 })
@@ -221,7 +219,6 @@ app.post('/login' , (req , res)=>{
     }else if(action === 'Register'){
         User.register({username:  req.body.username}, req.body.password, (err, user)=>{
             if(err){
-                console.log(err)
                 res.render('login', {errorMessage: "User Exists"})
             }else{
                 passport.authenticate('local')(req, res, ()=>{
