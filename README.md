@@ -12,6 +12,8 @@ Journal is a web app built with Nodejs and MongoDB.
 
 - Diplsay all journal enteries
 
+- Change password
+
 Demo: https://journal-app-demo.herokuapp.com
 
 
