@@ -7,6 +7,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 const bodyParser = require('body-parser');
 const crypto = require('crypto')
 
+
 const app = express();
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({
@@ -227,6 +228,14 @@ app.post('/login' , (req , res)=>{
             }
         })
     }
+})
+
+app.get('/404', (req, res)=>{
+    res.render('404')
+})
+
+app.all('*', (req, res)=>{
+    res.redirect('/404')
 })
 
 let port = process.env.PORT;
