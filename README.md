@@ -1,5 +1,8 @@
 ### Journal Web App
 
+### ⚠️ Heroku its ending free tiers. The demo website can no longer be up and running. See photos below on how the website looked, or just run the website locally.
+
+
 Journal is a web app built with Nodejs and MongoDB.
 
 #### Features:
